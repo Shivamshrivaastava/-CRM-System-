@@ -12,7 +12,6 @@
     "prisma:deploy": "prisma migrate deploy",
     "seed": "tsx prisma/seed.ts",
     "test": "jest --runInBand"
-    
   },
   "dependencies": {
     "@prisma/client": "^5.20.0",
