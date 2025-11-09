@@ -58,8 +58,13 @@ npx prisma generate
 npx prisma migrate dev --name init
 npm run seed
 ```
-✅ Creates default Admin user:  
-**Email:** admin@crm.local | **Password:** Admin@123
+✅ Creates default  user:  
+| Role                | Email               | Password      | Access Permissions                                                                      |
+| ------------------- | ------------------- | ------------- | --------------------------------------------------------------------------------------- |
+| **Admin**           | `admin@crm.local`   | `Admin@123`   | Full access — can view analytics, manage users, assign leads, and see all leads.        |
+| **Manager**         | `manager@crm.local` | `Manager@123` | Can view all leads, assign to sales, and see analytics — but cannot register new users. |
+| **Sales Executive** | `sales@crm.local`   | `Sales@123`   | Can view and update only their assigned leads — no access to users or analytics.        |
+
 
 ---
 
